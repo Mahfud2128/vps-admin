@@ -1,5 +1,3 @@
-- HARAP DI BACA & UTAMAKAN MEMBACA
-
 # INI SCRIPT KHUSUS UNTUK MEMBUAT SERVER VPN
 
 Buat VPS Fresh atau VPS Baru dan Wajib Menggunakan User: root
@@ -10,24 +8,6 @@ Buat VPS Fresh atau VPS Baru dan Wajib Menggunakan User: root
 
 ```html
 sudo su
-```
-
-Atau
-
-```html
-sudo -i
-```
-
-atau
-
-```html
-su
-```
-
-### Link Video Tutorial Cara Install
-
-```html
-https://www.facebook.com/100031931503057/posts/628374871570224/?app=fbl
 ```
 
 ## INFO TAMBAHAN , SILAHKAN DI BACA
@@ -52,32 +32,7 @@ https://www.facebook.com/100031931503057/posts/628374871570224/?app=fbl
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
 
-## 2.0
-
-<img src="https://img.shields.io/badge/Login_Root%20VPS-green">
-
-- Login ke VPS dan Aktifkan Root Sementara
-
-```html
-sudo su cd cd
-```
-
-## 2.
-
-  <img src="https://img.shields.io/badge/Buat_Akses_Root%20VPS-green">
-
-- Buat Akses Root Di VPS /Root VPS
-- Untuk Mengizinkan Root Dan Ubah Password Login di VPS Google Cloud Platform, Aws, Dan Lain-lain
-
-```html
-wget -qO- -O vpsroot.sh
-https://raw.githubusercontent.com/rendyproklamanta/vps-admin/main/vpsroot.sh &&
-bash vpsroot.sh
-```
-
 ### 3.
-
-  <img src="https://img.shields.io/badge/Install_Semua_Layanan_VPN%20-green">
 
 - Install Semua Layanan VPN /Install All VPN Service
 
@@ -86,8 +41,6 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 ```
 
 ### 4. DONE / SELESAI
-
-<img src="https://img.shields.io/badge/DONE%20_/_%20SELESAI-green">
 
 - • jika tidak bisa login di vps ,gunakan port ssh
 - • 22, 2253
@@ -98,22 +51,6 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 ```html
 menu
-```
-
-- untuk update menu dan update info
-
-```html
-updatemenu
-```
-
-- otomatis untuk memperbaiki error SSLH, WS-TLS
-
-```html
-sl-fix
-```
-
-```html
-reboot
 ```
 
 - Perbaiki SSL ERROR
@@ -131,69 +68,10 @@ slhost && certv2ray
 restart
 ```
 
--
--
--
-
-### 6. FIX ERROR SSLH WS
-
-# Auto Fix Error SSLH + WS-TLS 443
-
-- 1 • Jika terjadi error di SSLH dan SSH WS-TLS nya,gunakan script ini untuk memperbaiki nya
-
-```html
-menu
-```
-
-- 2 • di menu lalu pilih 17 (SL-FIX Menu)
-
-```html
-17
-```
-
-- 3 • jika sudah selesai lalu reboot/ hidupkan ulang vps nya
-
-```html
-reboot
-```
-
 ### 7. Info Websocket
 
 - Websocket harus menggunakan subdomain/domain dan sudah di pointing di cloudflare (CDN CLOUDFLARE)
 - Tanpa subdomain/domain mustahil bisa terhubung dengan bug yang berasal dari cloudflare
--
--
--
-
-### 100 (Fix manual) Fix Error SSLH
-
-- Perbaiki sslh yang error di vps yang tidak support sslh
-- khusus yang vps nya tidak support sslh
-- matikan ws-tls
-
-```html
-systemctl stop ws-tls
-```
-
-- buat user sslh / edit passwd
-
-```html
-echo sslh:x:109:114::/nonexistent:/usr/sbin/nologin >> /etc/passwd
-```
-
-- note: edit passwd dan pindah sslh nya di atas vnstat
-
-- start sslh dan jalankan
-
-```html
-systemctl start sslh /etc/init.d/sslh start /etc/init.d/sslh restart
-```
-
-- lalu start ws-tls
-
-```html
-systemctl start ws-tls
-```
 
 ```html
 reboot
@@ -292,7 +170,7 @@ reboot
 
 • Websocket OpenVPN : 2086
 
-• Squid Proxy : 3128, 8080 [OFF]
+• Squid Proxy : 3128, 8080
 
 • Badvpn : 7100, 7200, 7300
 
